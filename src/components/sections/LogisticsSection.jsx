@@ -29,7 +29,7 @@ const LogisticsSection = () => {
     {
       name: "Asia",
       description: "Growing presence in Asian markets",
-      countries: ["Turkey", "Iran", "UAE", "China"],
+      countries: ["Turkey"],
       gradient: "logistics__badge--purple",
     },
   ];
