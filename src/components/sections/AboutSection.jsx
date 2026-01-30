@@ -9,10 +9,10 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { icon: Globe, value: "15+", label: "Countries Served" },
+    { icon: Globe, value: "10+", label: "Countries Served" },
     { icon: Award, value: "20+", label: "Years Experience" },
-    { icon: Users, value: "500+", label: "Trusted Partners" },
-    { icon: Leaf, value: "100K+", label: "Tons Traded Annually" },
+    { icon: Users, value: "100+", label: "Trusted Partners" },
+    { icon: Leaf, value: "10K+", label: "Tons Traded Annually" },
   ];
 
   return (

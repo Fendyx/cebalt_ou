@@ -1,0 +1,162 @@
+.machinery-section {
+    padding: 6rem 1.5rem;
+    background-color: #ffffff;
+    color: #1e5128;
+  }
+  
+  .machinery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .machinery-header {
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto 4rem auto;
+  }
+  
+  .machinery-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #d4a574;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    border-radius: 999px;
+  }
+  
+  .machinery-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+  }
+  
+  .machinery-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+  }
+  
+  .machinery-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+  
+  @media (min-width: 768px) {
+    .machinery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .machinery-card {
+    background-color: #f8faf8;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .machinery-image-wrapper {
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+  }
+  
+  .machinery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .machinery-card:hover .machinery-image {
+    transform: scale(1.1);
+  }
+  
+  .machinery-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(30, 81, 40, 0.9), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .machinery-card:hover .machinery-image-overlay {
+    opacity: 1;
+  }
+  
+  .machinery-card-content {
+    padding: 2rem;
+  }
+  
+  .machinery-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .machinery-icon {
+    color: #1e5128;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .machinery-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .machinery-card-desc {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  
+  .machinery-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .machinery-item {
+    display: flex;
+    gap: 0.5rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bullet {
+    color: #d4a574;
+  }
+  
+  .machinery-cta {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #1e5128, #2d6a4f);
+    color: white;
+  }
+  
+  .cta-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #d4a574;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-text {
+    max-width: 40rem;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+  

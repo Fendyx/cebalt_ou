@@ -5,6 +5,7 @@ import LogisticsSection from '../components/sections/LogisticsSection';
 import AdvantagesSection from '../components/sections/AdvantagesSection';
 import ContactSection from '../components/sections/ContactSection';
 import Layout from '../components/layout/Layout';
+import MachinerySection from '../components/sections/MachinerySection';
 
 export default function Home() {
   const handleNavigate = (section) => {
@@ -26,9 +27,9 @@ export default function Home() {
       <HeroSection onNavigate={handleNavigate} />
       <AboutSection />
       <ProductsSection />
+      <MachinerySection />
       <LogisticsSection />
       <AdvantagesSection />
-      {/* <ContactSection /> */}
     </Layout>
   );
 }
