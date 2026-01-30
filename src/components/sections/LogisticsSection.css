@@ -202,12 +202,108 @@
   
   /* Responsive */
   @media (max-width: 768px) {
-    .logistics__title {
-      font-size: 34px;
+    .logistics {
+      padding: 72px 0;
     }
   
-    .logistics__image-content {
-      padding: 24px;
+    /* Header компактнее */
+    .logistics__header {
+      margin-bottom: 48px;
+    }
+  
+    .logistics__title {
+      font-size: 32px;
+      margin: 12px 0 16px;
+    }
+  
+    .logistics__subtitle {
+      font-size: 16px;
+    }
+  
+    /* === SERVICES: 2 в ряд === */
+    .logistics__services {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 64px;
+    }
+  
+    .logistics__service {
+      padding: 20px 16px;
+      border-radius: 14px;
+    }
+  
+    /* ИКОНКИ компактнее */
+    .logistics__service-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 12px;
+    }
+  
+    .logistics__service-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .logistics__service h4 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+  
+    .logistics__service p {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  
+    /* Image блок компактнее */
+    .logistics__image {
+      margin-bottom: 56px;
+    }
+  
+    .logistics__image-wrapper {
+      height: 240px;
+      border-radius: 16px;
+    }
+  
+    .logistics__image-content h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  
+    .logistics__image-content p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    /* Regions */
+    .logistics__regions-title {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+  
+    .logistics__regions-grid {
+      gap: 16px;
+    }
+  
+    .logistics__region-card {
+      padding: 16px;
+      border-radius: 14px;
+    }
+  
+    .logistics__badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      margin-bottom: 12px;
+    }
+  
+    .logistics__region-desc {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+  
+    .logistics__country {
+      font-size: 12px;
+      padding: 4px 10px;
     }
   }
+  
   

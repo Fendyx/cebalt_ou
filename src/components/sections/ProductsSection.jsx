@@ -32,15 +32,33 @@ const ProductsSection = () => {
       image:
         "https://images.unsplash.com/photo-1589430940232-2a7ffa0f1953?q=80&w=1170&auto=format&fit=crop",
     },
+    {
+        name: "Oats",
+        description: "Nutritious oats for food and feed applications",
+        image:
+          "https://images.unsplash.com/photo-1676289124506-bdce1e1acc97?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Barley",
+        description: "Versatile barley for malting, feed, and food uses",
+        image:
+          "https://images.unsplash.com/photo-1582363476910-3223e5fd0b32?q=80&w=1415&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
   ];
 
   const fruitProducts = [
     {
-      name: "Apples & Pears",
-      description: "Fresh, crisp apples and pears from select orchards",
+      name: "Apples",
+      description: "Fresh, crisp apples from select orchards",
       image:
         "https://images.unsplash.com/photo-1610397962076-02407a169a5b?q=80&w=1074&auto=format&fit=crop",
     },
+    {
+        name: "Pears",
+        description: "Juicy and flavorful pears for fresh eating and processing",
+        image:
+          "https://images.unsplash.com/photo-1514756331096-242fdeb70d4a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
     {
       name: "Grapes",
       description: "Premium table grapes and wine grapes",
@@ -74,6 +92,12 @@ const ProductsSection = () => {
       image:
         "https://images.unsplash.com/photo-1568584711271-6c929fb49b60?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    {
+        name: "Carrot",
+        description: "Crunchy and sweet carrots for fresh consumption and processing",
+        image:
+          "https://images.unsplash.com/photo-1633380110125-f6e685676160?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
   ];
 
   return (

@@ -165,7 +165,86 @@
     .advantages__grid { grid-template-columns: repeat(2, 1fr); }
   }
   
-  @media (max-width: 640px) {
-    .advantages__grid { grid-template-columns: 1fr; }
+  @media (max-width: 768px) {
+    .advantages {
+      padding: 64px 0;
+    }
+  
+    /* Header компактнее */
+    .advantages__header {
+      margin-bottom: 40px;
+    }
+  
+    .advantages__title {
+      font-size: 32px;
+      margin: 12px 0 16px;
+    }
+  
+    .advantages__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    /* === GRID: 2 в ряд === */
+    .advantages__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    /* Карточки */
+    .advantages__card {
+      padding: 20px;
+      border-radius: 14px;
+    }
+  
+    .advantages__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+  
+    .advantages__icon-svg {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .advantages__card-title {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+  
+    .advantages__card-text {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    /* CTA компактнее */
+    .advantages__cta {
+      margin-top: 48px;
+    }
+  
+    .advantages__cta-image-wrapper {
+      height: 220px;
+      border-radius: 14px;
+    }
+  
+    .advantages__cta-title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+  
+    .advantages__cta-text {
+      font-size: 15px;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+  
+    .advantages__cta-button {
+      padding: 12px 24px;
+      font-size: 14px;
+      border-radius: 10px;
+    }
   }
+  
   

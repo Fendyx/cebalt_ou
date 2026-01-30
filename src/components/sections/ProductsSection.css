@@ -151,8 +151,34 @@
       font-size: 34px;
     }
   
-    .products__grid--2 {
-      grid-template-columns: 1fr;
+    /* ВСЕ сетки — 2 карточки в ряд */
+    .products__grid--2,
+    .products__grid--3 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    /* Чуть компактнее карточки */
+    .product-card__image {
+      height: 180px;
+    }
+  
+    .product-card__image--large {
+      height: 200px;
+    }
+  
+    .product-card__content {
+      padding: 16px;
+    }
+  
+    .product-card__content h4 {
+      font-size: 18px;
+    }
+  
+    .product-card__content p {
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
+  
   

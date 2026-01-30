@@ -45,7 +45,7 @@ const HeroSection = ({ onNavigate }) => {
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            C.E. Balt OU
+            CEBALT
           </motion.h1>
 
           <motion.p
