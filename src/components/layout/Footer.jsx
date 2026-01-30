@@ -49,11 +49,43 @@ const Footer = ({ onNavigate }) => {
           <div>
             <h4 className="footer__subtitle">Quick Links</h4>
             <ul className="footer__links">
-              <li><button onClick={() => handleScrollOrNavigate("hero")}>Home</button></li>
-              <li><button onClick={() => handleScrollOrNavigate("about")}>About Us</button></li>
-              <li><button onClick={() => handleScrollOrNavigate("products")}>Products</button></li>
-              <li><button onClick={() => handleScrollOrNavigate("logistics")}>Logistics</button></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li>
+                <button
+                  className="footer__link-button"
+                  onClick={() => handleScrollOrNavigate("hero")}
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  className="footer__link-button"
+                  onClick={() => handleScrollOrNavigate("about")}
+                >
+                  About Us
+                </button>
+              </li>
+              <li>
+                <button
+                  className="footer__link-button"
+                  onClick={() => handleScrollOrNavigate("products")}
+                >
+                  Products
+                </button>
+              </li>
+              <li>
+                <button
+                  className="footer__link-button"
+                  onClick={() => handleScrollOrNavigate("logistics")}
+                >
+                  Logistics
+                </button>
+              </li>
+              <li>
+                <Link to="/contact" className="footer__link-anchor">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
