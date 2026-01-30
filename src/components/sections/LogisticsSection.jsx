@@ -30,14 +30,14 @@ const LogisticsSection = () => {
 
   const services = [
     {
+        icon: Truck,
+        title: "Road Transport",
+        description: "Reliable overland delivery throughout Europe and Asia",
+      },
+    {
       icon: Ship,
       title: "Sea Freight",
       description: "Bulk cargo shipping across international waters",
-    },
-    {
-      icon: Truck,
-      title: "Road Transport",
-      description: "Reliable overland delivery throughout Europe and Asia",
     },
     {
       icon: Globe2,

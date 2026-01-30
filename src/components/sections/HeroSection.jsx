@@ -45,9 +45,7 @@ const HeroSection = ({ onNavigate }) => {
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Connecting{" "}
-            <span className="hero__title-accent">Global Markets</span>{" "}
-            with Quality Agricultural Products
+            C.E. Balt OU
           </motion.h1>
 
           <motion.p
@@ -57,8 +55,7 @@ const HeroSection = ({ onNavigate }) => {
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Leading international trader of grains, oilseeds, and fresh fruits with
-            comprehensive logistics solutions across Europe, Asia, and beyond.
+            Agricultural commodities & logistics across Europe and Asia
           </motion.p>
 
           <motion.div
@@ -79,13 +76,14 @@ const HeroSection = ({ onNavigate }) => {
             </motion.button>
 
             <motion.button
-            className="hero__btn hero__btn--secondary"
-            onClick={() => navigate("/contact")}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-        >
-            Get in Touch
-        </motion.button>
+              className="hero__btn hero__btn--secondary"
+              onClick={() => navigate("/contact")}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get in Touch
+              <TrendingUp size={20} />
+            </motion.button>
           </motion.div>
         </div>
       </div>

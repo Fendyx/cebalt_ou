@@ -14,14 +14,14 @@ export default function MachinerySection() {
       description:
         "Professional agricultural machinery for efficient farming operations",
       image:
-        "https://images.unsplash.com/photo-1761454060506-306f61195866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "https://images.unsplash.com/photo-1594771804886-a933bb2d609b?q=80&w=1182&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       items: ["Tractors", "Combine Harvesters", "Seeders & Planters", "Sprayers & Cultivators"],
     },
     {
       name: "Spare Parts",
       description: "Original and compatible parts for agricultural equipment maintenance",
       image:
-        "https://images.unsplash.com/photo-1687709644237-ca3ef4127cc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "https://images.unsplash.com/photo-1759419281480-bacc913c9606?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       items: ["Engine Components", "Hydraulic Systems", "Filters & Bearings", "Wear Parts"],
     },
   ];

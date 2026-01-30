@@ -32,20 +32,10 @@ const AboutSection = () => {
             </h2>
 
             <p className="about__text">
-              C.E. Balt OU is a leading international agricultural trading and
-              logistics company, specializing in the trade of high-quality
-              grains, oilseeds, and fresh fruits across global markets.
+            International agricultural trading company specializing in grains, oilseeds, and fresh fruits.
             </p>
-
             <p className="about__text">
-              With decades of experience and a commitment to excellence, we
-              connect producers and buyers worldwide, ensuring seamless supply
-              chain management from farm to destination.
-            </p>
-
-            <p className="about__text">
-              We pride ourselves on reliability, transparency, and building
-              long-lasting partnerships based on trust and mutual growth.
+            Serving markets across Europe, South Caucasus, Kazakhstan, and Asia with reliable logistics solutions.
             </p>
           </motion.div>
 
@@ -58,7 +48,7 @@ const AboutSection = () => {
           >
             <div className="about__image">
               <img
-                src="https://images.unsplash.com/photo-1759272548457-12b8580bfca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1760541012030-2b4964413151?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmlnaHQlMjBzdW5mbG93ZXIlMjBmaWVsZCUyMGJsdWUlMjBza3l8ZW58MXx8fHwxNzY5ODEwNTI3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Agricultural Logistics"
               />
               <div className="about__overlay" />

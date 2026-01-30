@@ -9,22 +9,28 @@ const ProductsSection = () => {
 
   const grainProducts = [
     {
+        name: "Rapeseed flower",
+        description: "High-quality rapeseed for oil production and animal feed",
+        image:
+            "https://images.unsplash.com/photo-1654415195216-74c3280dd120?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
       name: "Wheat",
       description: "Premium quality wheat varieties for diverse applications",
       image:
-        "https://images.unsplash.com/photo-1688320243376-69b68a8f656f?fm=jpg&q=80&w=1080",
+        "https://images.unsplash.com/photo-1437252611977-07f74518abd7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Corn",
       description: "High-yield corn for food, feed, and industrial use",
       image:
-        "https://images.unsplash.com/photo-1595012255680-0a044900356a?fm=jpg&q=80&w=1080",
+        "https://images.unsplash.com/photo-1649251037465-72c9d378acb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Sunflower",
       description: "Premium sunflower seeds and oil-grade sunflowers",
       image:
-        "https://images.unsplash.com/photo-1662585445239-6906fa73d9f5?fm=jpg&q=80&w=1080",
+        "https://images.unsplash.com/photo-1589430940232-2a7ffa0f1953?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
@@ -33,7 +39,7 @@ const ProductsSection = () => {
       name: "Apples & Pears",
       description: "Fresh, crisp apples and pears from select orchards",
       image:
-        "https://images.unsplash.com/photo-1757898419796-e471282770cb?fm=jpg&q=80&w=1080",
+        "https://images.unsplash.com/photo-1610397962076-02407a169a5b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Grapes",
