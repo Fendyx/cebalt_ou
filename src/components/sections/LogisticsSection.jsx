@@ -11,7 +11,7 @@ const LogisticsSection = () => {
     {
       name: "Europe",
       description: "Comprehensive coverage across EU member states",
-      countries: ["Germany", "Poland", "Netherlands", "France", "Spain", "Italy"],
+      countries: ["Bulgaria", "Ukraine", "Germany", "Poland", "Spain", "Italy"],
       gradient: "logistics__badge--blue",
     },
     {
@@ -21,15 +21,9 @@ const LogisticsSection = () => {
       gradient: "logistics__badge--green",
     },
     {
-      name: "Central Asia",
-      description: "Expanding network in Kazakhstan and beyond",
-      countries: ["Kazakhstan", "Uzbekistan", "Turkmenistan"],
-      gradient: "logistics__badge--amber",
-    },
-    {
       name: "Asia",
       description: "Growing presence in Asian markets",
-      countries: ["Turkey"],
+      countries: ["Kazakhstan", "Uzbekistan","Turkey"],
       gradient: "logistics__badge--purple",
     },
   ];
