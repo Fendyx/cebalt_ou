@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import "./Header.css";
@@ -8,12 +8,10 @@ const Header = ({ onNavigate }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -28,12 +26,24 @@ const Header = ({ onNavigate }) => {
   ];
 
   const handleNavClick = (section) => {
-    if (section === "contact") {
-      navigate("/contact");
-    } else {
-      onNavigate(section);
-    }
     setIsMobileMenuOpen(false);
+
+    if (section === "contact") {
+      navigate("/contact", { replace: false });
+      window.scrollTo(0, 0); // скролл наверх при переходе
+      return;
+    }
+
+    // если мы на главной странице, скроллим к секции
+    if (location.pathname === "/") {
+      onNavigate(section);
+    } else {
+      // если на другой странице — переходим на главную и скроллим после рендера
+      navigate("/", { replace: false });
+      setTimeout(() => {
+        onNavigate(section);
+      }, 50); // небольшой таймаут, чтобы DOM успел отрендериться
+    }
   };
 
   return (
@@ -49,7 +59,10 @@ const Header = ({ onNavigate }) => {
           <motion.div
             className="header__logo"
             whileHover={{ scale: 1.02 }}
-            onClick={() => onNavigate("hero")}
+            onClick={() => {
+              navigate("/"); // логотип всегда ведет на главную
+              window.scrollTo(0, 0);
+            }}
           >
             <span className="header__logo-title">C.E. Balt OU</span>
             <span className="header__logo-subtitle">

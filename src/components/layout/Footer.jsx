@@ -1,10 +1,23 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ onNavigate }) => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollOrNavigate = (section) => {
+    if (location.pathname === "/") {
+      onNavigate(section);
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        onNavigate(section);
+      }, 50);
+    }
+  };
 
   return (
     <footer className="footer">
@@ -36,13 +49,11 @@ const Footer = () => {
           <div>
             <h4 className="footer__subtitle">Quick Links</h4>
             <ul className="footer__links">
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#logistics">Logistics</a></li>
-              <li>
-                  <Link to="/contact">Contact</Link>
-              </li>
+              <li><button onClick={() => handleScrollOrNavigate("hero")}>Home</button></li>
+              <li><button onClick={() => handleScrollOrNavigate("about")}>About Us</button></li>
+              <li><button onClick={() => handleScrollOrNavigate("products")}>Products</button></li>
+              <li><button onClick={() => handleScrollOrNavigate("logistics")}>Logistics</button></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
