@@ -5,6 +5,26 @@
     align-items: center;
     overflow: hidden;
     color: #ffffff;
+    padding-top: 50px;
+  }
+  
+  /* Adaptive padding for small sreens */
+  @media (max-height: 770px) {
+    .hero {
+      padding-top: 30px;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .hero {
+      padding-top: 50px;
+    }
+  }
+  
+  @media (max-height: 600px) {
+    .hero {
+      padding-top: 70px;
+    }
   }
   
   .hero__background {

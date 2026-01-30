@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import "./Header.css";
@@ -6,6 +7,7 @@ import "./Header.css";
 const Header = ({ onNavigate }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +28,11 @@ const Header = ({ onNavigate }) => {
   ];
 
   const handleNavClick = (section) => {
-    onNavigate(section);
+    if (section === "contact") {
+      navigate("/contact");
+    } else {
+      onNavigate(section);
+    }
     setIsMobileMenuOpen(false);
   };
 

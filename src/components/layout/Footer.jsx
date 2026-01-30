@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -39,7 +40,9 @@ const Footer = () => {
               <li><a href="#about">About Us</a></li>
               <li><a href="#products">Products</a></li>
               <li><a href="#logistics">Logistics</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                  <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </div>
 

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import "./HeroSection.css";
 
 const HeroSection = ({ onNavigate }) => {
@@ -7,6 +8,7 @@ const HeroSection = ({ onNavigate }) => {
     hidden: { opacity: 0, y: 60 },
     visible: { opacity: 1, y: 0 },
   };
+  const navigate = useNavigate();
 
   return (
     <section id="hero" className="hero">
@@ -77,14 +79,13 @@ const HeroSection = ({ onNavigate }) => {
             </motion.button>
 
             <motion.button
-              className="hero__btn hero__btn--secondary"
-              onClick={() => onNavigate("contact")}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get in Touch
-              <TrendingUp size={20} />
-            </motion.button>
+            className="hero__btn hero__btn--secondary"
+            onClick={() => navigate("/contact")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+        >
+            Get in Touch
+        </motion.button>
           </motion.div>
         </div>
       </div>

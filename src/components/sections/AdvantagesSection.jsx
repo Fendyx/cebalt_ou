@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Shield, Clock, Users, TrendingUp, Award, Headphones } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import "./AdvantagesSection.css";
 
 const AdvantagesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
 
   const advantages = [
     {
@@ -124,18 +126,16 @@ const AdvantagesSection = () => {
                 their agricultural trading needs.
               </motion.p>
               <motion.button
-                onClick={() => {
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                }}
+                onClick={() => navigate("/contact")}
                 className="advantages__cta-button"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 1 }}
-              >
+            >
                 Get Started Today
-              </motion.button>
+            </motion.button>
             </div>
           </div>
         </motion.div>

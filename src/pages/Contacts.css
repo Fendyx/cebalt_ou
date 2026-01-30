@@ -1,0 +1,93 @@
+.contact-page {
+    padding: 6rem 1.5rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8faf8;
+  }
+  
+  .contact-page__container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact-page__title {
+    font-size: 3rem;
+    color: #1e5128;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-page__subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-page__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .contact-page__card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-page__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact-page__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #e6f4ea;
+    color: #1e5128;
+  }
+  
+  .contact-page__icon--phone {
+    background-color: #d0f0fd;
+    color: #0284c7;
+  }
+  
+  .contact-page__info {
+    text-align: left;
+  }
+  
+  .contact-page__label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  
+  .contact-page__link {
+    font-size: 1.125rem;
+    color: #1e5128;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-page__link:hover {
+    color: #d4a574;
+  }
+  
