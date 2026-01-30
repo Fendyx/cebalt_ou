@@ -10,7 +10,7 @@ const AboutSection = () => {
 
   const stats = [
     { icon: Globe, value: "10+", label: "Countries Served" },
-    { icon: Award, value: "10+", label: "Years Experience" },
+    { icon: Award, value: "10+", label: "Years of Collective Experience" },
     { icon: Users, value: "100+", label: "Trusted Partners" },
     { icon: Leaf, value: "10K+", label: "Tons Traded Annually" },
   ];
