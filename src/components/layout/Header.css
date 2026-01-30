@@ -1,0 +1,136 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    padding: 24px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .header--scrolled {
+    padding: 16px 0;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .header__container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo */
+  .header__logo {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .header__logo-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e5128;
+  }
+  
+  .header__logo-subtitle {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #666;
+  }
+  
+  /* Desktop nav */
+  .header__nav {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .header__link {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: #555;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  
+  .header__link:hover {
+    color: #1e5128;
+  }
+  
+  .header__link-underline {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #1e5128;
+    transition: width 0.3s ease;
+  }
+  
+  .header__link:hover .header__link-underline {
+    width: 100%;
+  }
+  
+  /* Burger */
+  .header__burger {
+    display: none;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    z-index: 40;
+    pointer-events: none;
+  }
+  
+  .mobile-menu--open {
+    pointer-events: auto;
+  }
+  
+  .mobile-menu__nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .mobile-menu__link {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .mobile-menu__link:hover {
+    color: #1e5128;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header__nav {
+      display: none;
+    }
+  
+    .header__burger {
+      display: block;
+    }
+  }
+  

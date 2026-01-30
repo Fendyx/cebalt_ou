@@ -1,0 +1,131 @@
+.footer {
+    background: #1e5128;
+    color: #ffffff;
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+  
+  .footer__container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+  
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  
+  .footer__company {
+    grid-column: span 2;
+  }
+  
+  .footer__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .footer__description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .footer__icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .footer__icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .footer__links,
+  .footer__products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__links li,
+  .footer__products li {
+    margin-bottom: 8px;
+  }
+  
+  .footer__links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__links a:hover {
+    color: #ffffff;
+  }
+  
+  .footer__products {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Bottom bar */
+  .footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer__policies {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .footer__policies a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+  }
+  
+  .footer__policies a:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer__grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer__company {
+      grid-column: span 1;
+    }
+  
+    .footer__bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
