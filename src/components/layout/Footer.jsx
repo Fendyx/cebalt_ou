@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Footer.css";
 
@@ -33,15 +33,19 @@ const Footer = ({ onNavigate }) => {
             </p>
 
             <div className="footer__socials">
-              <motion.div whileHover={{ scale: 1.1 }} className="footer__icon">
-                <Mail size={18} />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="footer__icon">
-                <Phone size={18} />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="footer__icon">
-                <MapPin size={18} />
-              </motion.div>
+              {/* Ссылка на почту */}
+              <a href="mailto:info@cebalt.eu" className="footer__social-link">
+                <motion.div whileHover={{ scale: 1.1 }} className="footer__icon">
+                  <Mail size={18} />
+                </motion.div>
+              </a>
+              
+              {/* Ссылка на телефон */}
+              <a href="tel:+359876494596" className="footer__social-link">
+                <motion.div whileHover={{ scale: 1.1 }} className="footer__icon">
+                  <Phone size={18} />
+                </motion.div>
+              </a>
             </div>
           </div>
 
@@ -108,8 +112,8 @@ const Footer = ({ onNavigate }) => {
           <p>© {currentYear} C.E. Balt OU. All rights reserved.</p>
 
           <div className="footer__policies">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
           </div>
         </div>
       </div>
