@@ -112,8 +112,12 @@ const Footer = ({ onNavigate }) => {
           <p>© {currentYear} C.E. Balt OU. All rights reserved.</p>
 
           <div className="footer__policies">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms-of-service">Terms of Service</a>
+            <Link to="/privacy-policy" className="footer__policy-link">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-service" className="footer__policy-link">
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

@@ -8,13 +8,13 @@ const TermsOfService = () => {
       <p className="legal-meta">Last updated: [Date, e.g., February 1, 2026]</p>
       
       <p>
-        Please read these Terms of Service ("Terms") carefully before using the <strong>[Website URL]</strong> 
-        website (the "Service") operated by <strong>[Company Name]</strong> ("us", "we", or "our").
+        Please read these Terms of Service ("Terms") carefully before using the <strong>cebalt.eu </strong> 
+        website (the "Service") operated by <strong>C.E. Balt OU</strong> .
       </p>
 
       <h2>1. General Information</h2>
       <p>
-        This website serves as a digital business card for <strong>[Company Name]</strong>, a company 
+        This website serves as a digital business card for <strong>C.E. Balt OU</strong>, a company 
         specializing in the logistics of agricultural products. By accessing this website, you agree 
         to be bound by these Terms.
       </p>
@@ -30,14 +30,14 @@ const TermsOfService = () => {
         <li>
           <strong>Individual Agreements:</strong> Specific terms, prices, and conditions for the 
           transportation of agricultural goods are determined solely through individual contracts signed 
-          between the Client and <strong>[Company Name]</strong>.
+          between the Client and <strong>C.E. Balt OU</strong>.
         </li>
       </ul>
 
       <h2>3. Intellectual Property</h2>
       <p>
         The content on this website, including text, logos, images, and graphics, is the property of 
-        <strong>[Company Name]</strong> or used with permission. You may not reproduce, distribute, 
+        <strong> C.E. Balt OU</strong> or used with permission. You may not reproduce, distribute, 
         or use any content from this website for commercial purposes without our prior written consent.
       </p>
 
@@ -50,15 +50,15 @@ const TermsOfService = () => {
 
       <h2>5. Governing Law</h2>
       <p>
-        These Terms shall be governed by and construed in accordance with the laws of 
-        <strong>[Your Country/City, e.g., Poland / Russia / USA]</strong>, without regard to its 
+        These Terms shall be governed by and construed in accordance with the laws of  
+        <strong> EU</strong>, without regard to its 
         conflict of law provisions.
       </p>
 
       <h2>6. Contact Us</h2>
       <p>If you have any questions about these Terms, please contact us at:</p>
       <ul>
-        <li>Phone: <strong>[Your Phone Number]</strong></li>
+        <li>Phone: <strong>+359 876 494 596</strong></li>
       </ul>
     </div>
   );

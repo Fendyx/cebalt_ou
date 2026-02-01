@@ -8,8 +8,8 @@ const PrivacyPolicy = () => {
       <p className="legal-meta">Last updated: [Date, e.g., February 1, 2026]</p>
       
       <p>
-        This Privacy Policy describes how <strong>[Company Name]</strong> ("we", "us", or "our") handles 
-        information when you visit our website <strong>[Website URL]</strong>.
+        This Privacy Policy describes how <strong>C.E. Balt OU</strong> handles 
+        information when you visit our website <strong>cebalt.eu</strong>.
       </p>
 
       <h2>1. No Personal Data Collection</h2>
@@ -51,8 +51,8 @@ const PrivacyPolicy = () => {
       <h2>4. Contact Us</h2>
       <p>If you have any questions about this Privacy Policy, please contact us:</p>
       <ul>
-        <li>By phone: <strong>[Your Phone Number]</strong></li>
-        <li>By email: <strong>[Your Email Address]</strong></li>
+        <li>By phone: <strong>+359 876 494 596</strong></li>
+        <li>By email: <strong>info@cebalt.eu</strong></li>
       </ul>
     </div>
   );
